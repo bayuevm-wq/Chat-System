@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <device-transfer>
+        <include path="." />
+    </device-transfer>
+    <cloud-backup>
+        <include path="." />
+    </cloud-backup>
+</data-extraction-rules>
