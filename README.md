@@ -117,6 +117,45 @@ ruff format src tests
 mypy src
 ```
 
+## Frontend Client (Next.js)
+
+The frontend is a modern responsive SPA built with **Next.js 16 (App Router)**, **Zustand**, and **Tailwind CSS**. It connects to the distributed backend via WebSocket and REST APIs, simulating E2EE client cryptography and offline state indicators.
+
+### Running Frontend Locally
+
+1. **Navigate to the frontend directory**:
+   ```bash
+   cd frontend
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## Android Mobile Client (Kotlin)
+
+The mobile app is a native Android application built with **Kotlin**, **Jetpack Compose (Material 3)**, **Room Database**, **OkHttp WebSockets**, and **Clean Architecture/MVVM**.
+
+### Opening the Project in Android Studio
+
+1. Launch Android Studio.
+2. Select **Open** and choose the `mobile/` directory.
+3. Gradle will read `gradle/wrapper/gradle-wrapper.properties` and automatically download/sync dependency packages.
+4. Deploy the application to an **Android Emulator** or a physical device.
+
+*Note: The mobile app connects to `10.0.2.2:8000` by default when running in the emulator (Android's gateway loopback to your host machine). You can customize this target IP dynamically from the login screen configuration panel.*
+
+---
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
